@@ -7,8 +7,14 @@ var perguntas = [
     {
         enunciado: "A IA pode automatizar tarefas repetitivas.",
         alternativas: [
-            "Vai eliminar tarefas monotonas",
-            "Vai tirar muitos empregos"
+            {
+            texto:"Vai eliminar tarefas monotonas",
+            afirmação:""
+            },
+                {
+                    texto: "Vai tirar muitos empregos"
+                 afirmação: ""
+                }
         ]
     },
     {
@@ -50,7 +56,7 @@ mostraPergunta();
 function mostraPergunta(){
     perguntaAtual = perguntas[posiçaoAtual];
     cxPerguntas.textContent = perguntaAtual.enunciado;
-    mostraAlternativas();
+    mostraAlternativas();'
 }
 
 function mostraAlternativas() {
